@@ -4,6 +4,15 @@
 
 Install [NODE.js](https://nodejs.org/en/download/) or via your preferred [Package Manager](https://nodejs.org/en/download/package-manager/)
 
+```bash
+$ npm install
+```
+
+## Run Server
+```bash
+$ npm start
+```
+
 ## Media encodings by browser
 http://stackoverflow.com/questions/21921790/best-approach-to-real-time-http-streaming-to-html5-video-client
 
