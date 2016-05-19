@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/asantebuil/WebRTC/issues"
   },
-  "homepage": "https://github.com/asantebuil/WebRTC#readme"
+  "homepage": "https://github.com/asantebuil/WebRTC#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
