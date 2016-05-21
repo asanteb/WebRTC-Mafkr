@@ -5,7 +5,7 @@
   "main": "index.js",
 
   "scripts": {
-    "start": "npm install && npm run templates && serve",
+    "start": "npm install && npm run templates && npm run serve",
     "serve": "node index.js",
 
     "watch": "npm run watch/templates & npm run serve & npm run watch/browser",
