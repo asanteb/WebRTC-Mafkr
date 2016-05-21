@@ -5,10 +5,16 @@
   "main": "index.js",
 
   "scripts": {
-    "start": "npm install && npm run templates && node index.js",
+    "start": "npm install && npm run templates && serve",
+    "serve": "node index.js",
+
+    "watch": "npm run watch/templates & npm run serve & npm run watch/browser",
+    "watch/browser": "browser-sync start --proxy \"localhost:3000/\" --files public",
     "watch/templates": "pug --watch *.pug --out public",
+
     "templates": "pug *.pug --out public",
     "remove/templates": "rm ./public/*.html",
+
     "test": "echo \"Error: no test specified\" && exit 1"
   },
 
@@ -27,5 +33,8 @@
     "peer": "^0.2.8",
     "pug": "^2.0.0-alpha7",
     "pug-cli": "^1.0.0-alpha5"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.12.8"
   }
 }
