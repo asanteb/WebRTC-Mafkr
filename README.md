@@ -12,6 +12,11 @@ $ npm install
 ```bash
 $ npm start
 ```
+## Run server with browsersync watching for changes and pug watching for changes
+```bash
+$ npm run watch
+```
+
 
 ## Compile PUG Templates
 ```bash
