@@ -12,7 +12,7 @@ $ npm install
 ```bash
 $ npm start
 ```
-## Run server with browsersync watching for changes and pug watching for changes
+## Run server with browsersync and pug watching
 ```bash
 $ npm run watch
 ```
