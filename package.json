@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "description": "## Setup",
   "main": "index.js",
+
   "scripts": {
-    "start": "node index.js",
+    "start": "npm run templates && node index.js",
+    "watch/templates": "pug --watch *.pug --out public",
+    "templates": "pug *.pug --out public",
+    "remove/templates": "rm ./public/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/asantebuil/WebRTC.git"
@@ -19,6 +24,8 @@
   "homepage": "https://github.com/asantebuil/WebRTC#readme",
   "dependencies": {
     "express": "^4.13.4",
-    "peer": "^0.2.8"
+    "peer": "^0.2.8",
+    "pug": "^2.0.0-alpha7",
+    "pug-cli": "^1.0.0-alpha5"
   }
 }

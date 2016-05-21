@@ -13,6 +13,14 @@ $ npm install
 $ npm start
 ```
 
+## Compile PUG Templates
+```bash
+$ npm run templates
+# OR
+$ npm run watch/templates # (Watches for changes then re renders)
+$ npm run remove/templates # removes all templates
+```
+
 ## Media encodings by browser
 http://stackoverflow.com/questions/21921790/best-approach-to-real-time-http-streaming-to-html5-video-client
 
