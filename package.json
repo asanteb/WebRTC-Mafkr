@@ -5,7 +5,7 @@
   "main": "index.js",
 
   "scripts": {
-    "start": "npm run templates && node index.js",
+    "start": "npm install && npm run templates && node index.js",
     "watch/templates": "pug --watch *.pug --out public",
     "templates": "pug *.pug --out public",
     "remove/templates": "rm ./public/*.html",
