@@ -3,7 +3,7 @@ var app = express()
 
 app.use( express.static('public') )
 
-var server = app.listen(3000, function () {
+var server = app.listen(process.env.PORT, function () {
   console.log('Example app listening on port 3000!');
 })
 
