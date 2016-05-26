@@ -1,12 +1,10 @@
-doctype html
-//
-  Muaz Khan     - github.com/muaz-khan
-  MIT License   - www.webrtc-experiment.com/licence
-  Documentation - www.RTCMultiConnection.org
+doctype //
 html(lang='en')
   head
     title
+    |     
     link(rel='stylesheet', href='//cdn.webrtc-experiment.com/style.css')
+    |     
     style.
       audio,
       video {
@@ -19,6 +17,7 @@ html(lang='en')
       }
     // scripts used for WebRTC connections
     script(src='//cdn.webrtc-experiment.com/RTCMultiConnection.js')
+    |     
     script(src='//cdn.webrtc-experiment.com/firebase.js')
   style.
     #videos {
@@ -49,26 +48,13 @@ html(lang='en')
   body
     select
       option Broadcaster
+      |     
       option Anonymous Viewer
+      |     
       option Room Moderator
+    |   
     button Continue
+    |   
     #videos
-      button
-      //
-        <figure>
-        <figcaption></figcaption>
-        </figure>
-        <figure>
-        <figcaption></figcaption>
-        </figure>
-        <figure>
-        <figcaption></figcaption>
-        </figure>
-        --!>
-        <figure>
-        <figcaption></figcaption>
-        </figure>
-        </div>
-        <script src='/scripts.js'>
-        </body>
-        </html>
+    |   
+    script.(src='scripts.js')
