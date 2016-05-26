@@ -3,6 +3,7 @@ node_modules
 
 # remove all html files
 public/*.html
+public/*.js
 
 #logs
 logs
