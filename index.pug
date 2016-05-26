@@ -1,11 +1,74 @@
-html
+doctype html
+//
+  Muaz Khan     - github.com/muaz-khan
+  MIT License   - www.webrtc-experiment.com/licence
+  Documentation - www.RTCMultiConnection.org
+html(lang='en')
   head
-    title WebRTC
-
-    link(rel='stylesheet', href='style.css')
-
+    title
+    link(rel='stylesheet', href='//cdn.webrtc-experiment.com/style.css')
+    style.
+      audio,
+      video {
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease;
+      vertical-align: top;
+      }
+    // scripts used for WebRTC connections
+    script(src='//cdn.webrtc-experiment.com/RTCMultiConnection.js')
+    script(src='//cdn.webrtc-experiment.com/firebase.js')
+  style.
+    #videos {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    }
+    * {
+    margin: 0;
+    padding: -0.02px 0;
+    }
+    figure, video {
+    width: 48vw;
+    height: 48vh;
+    float: left;
+    display: block;
+    margin: 1vh 1vw;
+    background: #bada55;
+    }
+    figure:after {
+    height: 0;
+    clear: both;
+    font-size: 0;
+    content: " ";
+    display: block;
+    visibility: hidden;
+    }
   body
-    main
-      h1 Web RTC
-
-      section#broacasters
+    select
+      option Broadcaster
+      option Anonymous Viewer
+      option Room Moderator
+    button Continue
+    #videos
+      button
+      //
+        <figure>
+        <figcaption></figcaption>
+        </figure>
+        <figure>
+        <figcaption></figcaption>
+        </figure>
+        <figure>
+        <figcaption></figcaption>
+        </figure>
+        --!>
+        <figure>
+        <figcaption></figcaption>
+        </figure>
+        </div>
+        <script src='/scripts.js'>
+        </body>
+        </html>
