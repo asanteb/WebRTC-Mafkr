@@ -13,7 +13,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "npm install && npm run templates && npm run scripts && npm run serve",
+    "start": "npm install  && npm run scripts && npm run serve",
     "serve": "node index.js",
     "watch": "npm run watch/templates & npm run watch/scripts & npm run serve & npm run watch/browser",
     "watch/browser": "browser-sync start --proxy \"localhost:3000/\" --files public",
