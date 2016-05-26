@@ -1,3 +1,7 @@
+*
+  margin: 0
+  padding: -0.02px 0
+
 audio, video
   -moz-transition: all 1s ease
   -ms-transition: all 1s ease
@@ -11,27 +15,24 @@ audio, video
   height: 100vh
   background: white
 
-*
-  margin: 0
-  padding: -0.02px 0
-
-figure
-  float: left
-  width: 48vw
-  height: 48vh
-  display: block
-  margin: 1vh 1vw
-  background: #bada55
-
-  &:after
-    height: 0
-    clear: both
-    font-size: 0
-    content: " "
+  figure, video
+    float: left
+    width: 48vw
+    height: 50%
     display: block
-    visibility: hidden
+    margin: 1vh 1vw
+    background: #bada55
+    border-radius: 25px
 
-  video
-    width: 100%
-    height: 56.25%
-    // proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%)
+    &:after
+      height: 0
+      clear: both
+      font-size: 0
+      content: " "
+      display: block
+      visibility: hidden
+
+    video
+      width: 100%
+      height: 56.25%
+      // proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%)
