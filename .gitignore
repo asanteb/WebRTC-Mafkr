@@ -1,9 +1,8 @@
-# node dependencies
+# ignore node dependencies
 node_modules
 
-# remove all html files
-public/*.html
-public/*.js
+# ignore all static files
+public
 
-#logs
+# ignore logs
 logs
