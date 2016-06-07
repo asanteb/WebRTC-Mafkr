@@ -13,12 +13,12 @@ audio, video
 #videos
   width: 100vw
   height: 100vh
-  background: white
 
-  figure, video
+  figure
     float: left
     width: 48vw
-    height: 50%
+    height: 48vh
+      // proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%)
     display: block
     margin: 1vh 1vw
     background: #bada55
@@ -33,6 +33,8 @@ audio, video
       visibility: hidden
 
     video
+      background: black
       width: 100%
-      height: 56.25%
+      height: 100%
       // proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%)
+      border-radius: 25px
