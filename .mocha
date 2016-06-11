@@ -1,0 +1,9 @@
+./broadcasts/*.js
+--require spec-helper
+--reporter landing
+--colors
+--debug
+--no-exit
+--harmony
+--slow 500
+--timeout 3000

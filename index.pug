@@ -5,13 +5,13 @@ html(lang='en')
     title
 
     link(rel='stylesheet', href='/styles.css')
+    link(rel='import', src='/broadcast.html')
 
-    script(src='//cdn.webrtc-experiment.com/RTCMultiConnection.js')
     script(src='//cdn.webrtc-experiment.com/firebase.js')
 
   body
     main
       #videos
-        button Call
 
-script(src='/scripts.js')
+    script(src='/RTCMultiConnection.js')
+    script(src='/scripts.js')

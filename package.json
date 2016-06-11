@@ -15,15 +15,15 @@
   "scripts": {
     "start": "npm install && npm run templates && npm run styles && npm run scripts && npm run serve",
     "serve": "node index.js",
-    "watch": "npm run watch/templates & run watch/styles & npm run watch/scripts & npm run serve & npm run watch/browser",
-    "watch/browser": "browser-sync start --proxy \"localhost:3000/\" --files public",
-    "watch/templates": "pug --watch *.pug --out public",
+    "watch": "npm run watch/templates & npm run watch/styles & npm run watch/scripts & npm run serve & npm run watch/browser & npm run watch/test",
+    "watch/browser": "browser-sync start --proxy localhost:8080 --files public",
+    "watch/templates": "pug --watch *.pug broadcasts --out public",
     "templates": "pug *.pug --out public",
     "remove/templates": "rm ./public/*.html",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scripts": "browserify scripts.js -o public/scripts.js",
-    "watch/scripts": "watchify scripts.js -o public/scripts.js",
-
+    "test": "mocha --opts .mocha",
+    "watch/test": "mocha --watch --opts .mocha",
+    "scripts": "browserify scripts.js -o public/scripts.js -v",
+    "watch/scripts": "watchify scripts.js -o public/scripts.js -v",
     "styles": "node-sass --output-style=expanded ./styles.sass ./public/styles.css",
     "watch/styles": "node-sass --output-style=compressed ./styles.sass ./public/styles.css --watch",
     "remove/styles": "rm -r ./public/*.css"

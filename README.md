@@ -8,10 +8,18 @@ Install [NODE.js](https://nodejs.org/en/download/) or via your preferred [Packag
 $ npm install
 ```
 
+## Run Tests
+```bash
+$ npm run test # Full test suite run
+
+$ npm run watch/test # Watches specs for changes then runs respective test on save
+```
+
 ## Run Server
 ```bash
 $ npm start
 ```
+
 ## Run server with browsersync and pug watching
 ```bash
 $ npm run watch
