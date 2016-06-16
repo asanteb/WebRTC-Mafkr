@@ -33,7 +33,11 @@ function videoMediaFrom(source) {
         { frameRate: 30 },
         { facingMode: 'user' },
         { width: { max: 1280 } },
+<<<<<<< HEAD
         { sourceId: source.deviceId }
+=======
+        { sourceId: source.deviceid }
+>>>>>>> 78e2d96... Add public/preferences.js ¯\_(ツ)_/¯
       ]
     }
   }
