@@ -4,17 +4,15 @@ html(lang='en')
   head
     title
 
-    link(rel='stylesheet', href='/styles.css')
-    link(rel='import', src='/broadcast.html')
+    link(rel='stylesheet' href='/styles.css')
+    link(id='x-preferences' rel='import' href='/preferences.html')
 
-    script(src='//cdn.webrtc-experiment.com/firebase.js')
+    script(defer src='//cdn.webrtc-experiment.com/firebase.js')
+    script(defer src='/RTCMultiConnection.js')
+    script(defer src='/scripts.js')
 
   body
-    details#preferences
-      summary Preferences
+    x-preferences
 
     main
       #videos
-
-    script(src='/RTCMultiConnection.js')
-    script(src='/scripts.js')

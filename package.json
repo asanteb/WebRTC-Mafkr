@@ -17,8 +17,8 @@
     "serve": "node index.js",
     "watch": "npm run watch/templates & npm run watch/styles & npm run watch/scripts & npm run serve & npm run watch/browser & npm run watch/test",
     "watch/browser": "browser-sync start --proxy localhost:8080 --files public",
-    "watch/templates": "pug --watch *.pug broadcasts --out public",
-    "templates": "pug *.pug --out public",
+    "watch/templates": "pug --watch *.pug broadcasts preferences --out public",
+    "templates": "pug *.pug broadcasts preferences --out public",
     "remove/templates": "rm ./public/*.html",
     "test": "mocha --opts .mocha",
     "watch/test": "mocha --watch --opts .mocha",
@@ -38,7 +38,8 @@
     "express": "^4.13.4",
     "node-sass": "^3.7.0",
     "pug": "^2.0.0-alpha7",
-    "pug-cli": "^1.0.0-alpha5"
+    "pug-cli": "^1.0.0-alpha5",
+    "webcomponents.js": "^0.7.22"
   },
   "devDependencies": {
     "browser-sync": "^2.12.8",
