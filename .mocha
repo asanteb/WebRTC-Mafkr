@@ -1,6 +1,8 @@
 ./broadcasts/*.js
+./sessions/*.js
+./preferences/*.js
 --require spec-helper
---reporter landing
+--reporter list
 --colors
 --debug
 --no-exit
